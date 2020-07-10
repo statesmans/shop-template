@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff"); }
+
+@font-face {
+  font-family: "Times";
+  src: url("../fonts/times-new-roman-cyr-kursywa.woff2") format("woff2"); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura PT'; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'HelveticaNeue';
+  font-weight: 400;
+  color: #000;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.container {
+  max-width: 375px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=public-style.css.map */

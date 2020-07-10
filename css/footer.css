@@ -1,0 +1,112 @@
+.footer__block {
+  border-top: 1px solid #e5e5e5; }
+
+.footer__links-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 57px 45px 21px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.footer__contact-main {
+  display: flex; }
+
+.footer__links-title {
+  margin-bottom: 34px;
+  font-size: 14px;
+  font-weight: 400; }
+
+.footer__links-link {
+  display: block;
+  margin-bottom: 22px;
+  font-family: 'Helveticaneue';
+  font-size: 12px; }
+  .footer__links-link:hover {
+    color: #e5e5e5; }
+
+.footer__contact {
+  display: flex; }
+
+.footer__contact-delivery {
+  display: none; }
+
+.footer__contact-social {
+  display: none; }
+
+.footer__legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+
+.footer__legal-list {
+  display: flex; }
+  .footer__legal-list li {
+    margin-right: 17px;
+    list-style: none; }
+  .footer__legal-list a {
+    font-family: 'Helveticaneue';
+    font-size: 10px;
+    font-weight: 700; }
+
+.footer__legal-social {
+  display: flex; }
+  .footer__legal-social a:first-child {
+    margin-right: 20px; }
+
+.footer__license {
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between; }
+  .footer__license p {
+    font-family: 'Helveticaneue';
+    font-size: 10px;
+    font-weight: 700; }
+  .footer__license a {
+    display: flex;
+    align-items: center;
+    font-family: 'Futura PT';
+    font-size: 16px; }
+    .footer__license a span {
+      background: url("../img/fon.png") no-repeat center left/contain;
+      width: 30px;
+      height: 19px;
+      display: flex;
+      font-family: 'Helveticaneue';
+      font-size: 10px;
+      font-weight: 400;
+      align-items: center;
+      padding-left: 8px;
+      margin-left: 6px; }
+
+.questions {
+  padding: 20px 42px 42px 22px;
+  border-right: 1px solid #e5e5e5; }
+  .questions__title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .questions__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Helveticaneue';
+    font-size: 12px; }
+    .questions__link::before {
+      content: url("../img/twi_ico.png");
+      margin-right: 8px; }
+    .questions__link span {
+      font-weight: 700;
+      padding-left: 3px; }
+
+.number {
+  padding: 20px 23px 42px 22px; }
+  .number__title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .number__phone {
+    font-family: 'Helveticaneue';
+    font-size: 12px; }
+
+/*# sourceMappingURL=footer.css.map */

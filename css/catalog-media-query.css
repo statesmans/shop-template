@@ -1,0 +1,122 @@
+@media (min-width: 768px) {
+  .header__sign {
+    min-width: 77px;
+    margin-right: 0; }
+  .header__inner-right {
+    width: 40%;
+    justify-content: space-between; }
+  .header__purchases {
+    width: 150px;
+    justify-content: flex-end;
+    flex-basis: unset; }
+  .header__purchase-amount {
+    margin-left: 7px; }
+  .card {
+    width: 25.33333%;
+    margin-top: 100px; }
+    .card:nth-child(3) {
+      order: 1;
+      margin-top: 0; }
+    .card__image-block img {
+      height: 289px; }
+  .mobile-disable {
+    display: block; }
+  .adidas {
+    height: 100%;
+    width: 67%; }
+  .repair-patch {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 33%;
+    background: url("../img/advertising2.png") no-repeat center center/contain; }
+    .repair-patch::after {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.3);
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      position: absolute; }
+    .repair-patch .advertising__text {
+      padding: 0;
+      max-width: 183px;
+      margin: 0 auto 41px; }
+  .advertisement {
+    width: 100%;
+    max-width: none;
+    padding: 80px 0 18px 0; }
+    .advertisement__title {
+      max-width: 377px;
+      margin: 0 auto;
+      margin-bottom: 15px; }
+    .advertisement__subtitle {
+      max-width: 503px;
+      margin: 0 auto; }
+  .advertising__block {
+    display: flex;
+    height: 251px; }
+  .advertising__text {
+    position: relative;
+    z-index: 2; } }
+
+@media (min-width: 1300px) {
+  .header__inner-right {
+    width: 20%; }
+  .offers__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .offers__more {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    max-width: 340px;
+    font-size: 26px; }
+  .card {
+    width: auto; }
+    .card:nth-child(4) {
+      order: 1;
+      margin-top: 0; }
+    .card__image-block img {
+      height: 340px; }
+  .advertisement {
+    grid-column-start: 1;
+    grid-column-end: 5; }
+    .advertisement__title {
+      max-width: none;
+      font-size: 26px; }
+    .advertisement__subtitle {
+      max-width: none;
+      font-size: 16px; }
+  .advertising__block {
+    height: 384px; }
+  .advertising__text {
+    max-width: 169px;
+    padding: 67px 87px 0 0; }
+  .advertising__title {
+    font-size: 30px; }
+  .advertising__subtitle {
+    font-size: 14px; }
+  .adidas {
+    width: 50%; }
+  .repair-patch {
+    width: 25%; }
+    .repair-patch .advertising__text {
+      max-width: 194px; }
+  .bag {
+    width: 25%;
+    background: url("../img/advertising3.png") no-repeat center center/contain #fff;
+    display: flex;
+    align-items: flex-end; }
+    .bag .advertising__text {
+      margin: 0 auto 50px;
+      padding: 0; }
+    .bag .advertising__title {
+      color: #f14a58; }
+    .bag .advertising__subtitle {
+      font-family: 'Times';
+      font-style: italic;
+      color: #757575; } }
+
+/*# sourceMappingURL=catalog-media-query.css.map */
