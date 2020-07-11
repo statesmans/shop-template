@@ -3,7 +3,7 @@
   justify-content: center; }
   .single-item div {
     height: 530px;
-    background: url("../img/_promo_block.png") no-repeat center center/cover;
+    background: url("../img/promo-block.png") no-repeat center center/cover;
     width: 100%; }
 
 .slick-dots {
