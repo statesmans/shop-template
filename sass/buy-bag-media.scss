@@ -1,0 +1,159 @@
+@media (min-width: 768px) {
+    .buy-bag {
+        max-width: 690px;
+        &__wraper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 30px;
+        }
+        &__title-block {
+            padding: 22px 30px 18px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__close-btn {
+            width: 19px;
+            height: 19px;
+            &::before {
+                content: '';
+                display: block;
+                position: relative;
+                top: 7px;
+                width: 19px;
+                height: 4px;
+
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: relative;
+                top: 3px;
+                width: 19px;
+                height: 4px;
+
+            }
+        }
+
+        &__item-info {
+            max-width: 121px;
+            margin-top: 0;
+        }
+
+        &__image-block {
+            margin-right: 25px;
+        }
+
+        &__item-status {
+            font-size: 16px;
+        }
+
+        &__item-price {
+            font-size: 14px;
+        }
+
+        &__item-title {
+            font-size: 14px;
+        }
+        // .buy-bag__item-color
+
+        &__item-color {
+            margin-bottom: 12px;
+            font-size: 12px;
+        }
+
+        // .buy-bag__item-size
+
+        &__item-size {
+            margin-bottom: 12px;
+            font-size: 12px;
+        }
+
+        // .buy-bag__item-quantity
+
+        &__item-quantity {
+            margin-bottom: 31px;
+            font-size: 12px;
+        }
+        &__item-change {
+            font-size: 14px;
+        }
+        &__attention-deliv {
+            font-size: 12px;
+        }
+    }
+
+    .pay-block {
+        padding: 30px 30px 80px;
+        &__remove-save {
+            display: flex;
+            font-size: 12px;
+        }
+        &__save {
+            margin-right: 15px;
+        }
+        &__buy-btn {
+            width: 261px;
+            padding: 23px 0 23px 0;
+            font-size: 24px;
+        }
+    }
+    .total-text {
+        font-size: 12px;
+    }
+    .total-cost {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    br {
+        display: none;
+    }
+    .buy-bag {
+        max-width: 834px;
+        &__wraper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item-info {
+            max-width: 46%;
+        }
+    }
+
+    .pay-block {
+        &__buy-btn {
+            width: 300px;
+            padding: 23px 0 23px 0;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .buy-bag {
+        max-width: 960px;
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__item-info {
+            max-width: 49%;
+        }
+
+        // .buy-bag__item-quantity
+
+        &__item-quantity {
+            font-size: 14px;
+        }
+
+    }
+
+    .pay-block {
+        padding: 30px 30px 60px;
+        &__buy-btn {
+            font-size: 26px;
+        }
+    }
+}

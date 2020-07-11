@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff"); }
+
+@font-face {
+  font-family: "Times";
+  src: url("../fonts/times-new-roman-cyr-kursywa.woff2") format("woff2"); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura PT'; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'HelveticaNeue';
+  font-weight: 400;
+  color: #000;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.body-opacity {
+  opacity: .3; }
+
+.container {
+  max-width: 375px;
+  margin: 0 auto; }
+
+body {
+  position: relative; }
+
+.modal-buy {
+  display: none; }
+  .modal-buy--active {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    background-color: #fff; }
+
+.buy-bag {
+  position: absolute;
+  max-width: 335px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #fff; }
+  .buy-bag__item {
+    display: flex;
+    font-family: 'Helveticaneue'; }
+  .buy-bag__title-block {
+    padding: 18px 15px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5; }
+  .buy-bag__title {
+    font-family: 'Futura PT';
+    font-size: 20px;
+    font-weight: 400; }
+  .buy-bag__close-btn {
+    cursor: pointer; }
+    .buy-bag__close-btn::before {
+      content: '';
+      display: block;
+      position: relative;
+      top: 6px;
+      width: 15px;
+      height: 3px;
+      background-color: #f14a58;
+      transform: rotateZ(45deg); }
+    .buy-bag__close-btn::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: 3px;
+      width: 15px;
+      height: 3px;
+      background-color: #f14a58;
+      transform: rotateZ(-45deg); }
+  .buy-bag__wraper {
+    padding: 15px 15px; }
+  .buy-bag__item {
+    margin-bottom: 28px;
+    font-size: 12px; }
+    .buy-bag__item--delete .buy-bag__image-block img {
+      opacity: .6; }
+    .buy-bag__item--delete .buy-bag__item-state {
+      color: #f14a58; }
+    .buy-bag__item--delete .buy-bag__item-price {
+      opacity: .6; }
+    .buy-bag__item--delete .buy-bag__item-info {
+      opacity: .6; }
+    .buy-bag__item--delete .buy-bag__item-change {
+      display: none; }
+  .buy-bag__image-block {
+    position: relative;
+    margin-right: 20px; }
+    .buy-bag__image-block img {
+      height: 205px; }
+  .buy-bag__item-state {
+    font-family: 'Futura PT';
+    position: absolute;
+    left: 15px;
+    top: 15px; }
+  .buy-bag__item-price {
+    margin-top: 20px;
+    text-align: center; }
+  .buy-bag__item-status {
+    margin-left: 7px;
+    font-family: 'Times';
+    font-size: 14px;
+    color: #757575; }
+  .buy-bag__item-info {
+    max-width: 105px;
+    margin-top: 15px; }
+  .buy-bag__item-title {
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 13px; }
+  .buy-bag__item-color {
+    margin-bottom: 10px;
+    font-size: 10px; }
+  .buy-bag__item-size {
+    margin-bottom: 10px;
+    font-size: 10px; }
+  .buy-bag__item-quantity {
+    margin-bottom: 29px;
+    font-size: 10px; }
+  .buy-bag__item-change {
+    font-family: 'Futura PT';
+    color: #f14a58; }
+    .buy-bag__item-change:active {
+      color: #000; }
+  .buy-bag__attention-deliv {
+    padding: 13px 24px;
+    font-family: 'Futura PT';
+    font-size: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e5e5e5; }
+
+.pay-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 35px; }
+  .pay-block__remove-save {
+    font-family: 'Helveticaneue';
+    font-weight: 700;
+    font-size: 10px; }
+  .pay-block__save {
+    margin-bottom: 10px; }
+  .pay-block__buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    padding: 17px 0;
+    font-family: 'Futura PT';
+    font-size: 20px;
+    border: 1px solid #e5e5e5; }
+  .pay-block__cost {
+    text-align: end; }
+
+.total-text {
+  font-family: "Helvetica Neue";
+  font-size: 10px; }
+
+.total-cost {
+  font-family: 'Futura PT';
+  font-size: 14px; }
+
+@media (min-width: 768px) {
+  .buy-bag {
+    max-width: 690px; }
+    .buy-bag__wraper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 30px; }
+    .buy-bag__title-block {
+      padding: 22px 30px 18px; }
+    .buy-bag__title {
+      font-size: 24px; }
+    .buy-bag__close-btn {
+      width: 19px;
+      height: 19px; }
+      .buy-bag__close-btn::before {
+        content: '';
+        display: block;
+        position: relative;
+        top: 7px;
+        width: 19px;
+        height: 4px; }
+      .buy-bag__close-btn::after {
+        content: '';
+        display: block;
+        position: relative;
+        top: 3px;
+        width: 19px;
+        height: 4px; }
+    .buy-bag__item-info {
+      max-width: 121px;
+      margin-top: 0; }
+    .buy-bag__image-block {
+      margin-right: 25px; }
+    .buy-bag__item-status {
+      font-size: 16px; }
+    .buy-bag__item-price {
+      font-size: 14px; }
+    .buy-bag__item-title {
+      font-size: 14px; }
+    .buy-bag__item-color {
+      margin-bottom: 12px;
+      font-size: 12px; }
+    .buy-bag__item-size {
+      margin-bottom: 12px;
+      font-size: 12px; }
+    .buy-bag__item-quantity {
+      margin-bottom: 31px;
+      font-size: 12px; }
+    .buy-bag__item-change {
+      font-size: 14px; }
+    .buy-bag__attention-deliv {
+      font-size: 12px; }
+  .pay-block {
+    padding: 30px 30px 80px; }
+    .pay-block__remove-save {
+      display: flex;
+      font-size: 12px; }
+    .pay-block__save {
+      margin-right: 15px; }
+    .pay-block__buy-btn {
+      width: 261px;
+      padding: 23px 0 23px 0;
+      font-size: 24px; }
+  .total-text {
+    font-size: 12px; }
+  .total-cost {
+    font-size: 18px; } }
+
+@media (min-width: 1024px) {
+  br {
+    display: none; }
+  .buy-bag {
+    max-width: 834px; }
+    .buy-bag__wraper {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+    .buy-bag__item-info {
+      max-width: 46%; }
+  .pay-block__buy-btn {
+    width: 300px;
+    padding: 23px 0 23px 0; } }
+
+@media (min-width: 1300px) {
+  .buy-bag {
+    max-width: 960px; }
+    .buy-bag__title {
+      font-size: 26px; }
+    .buy-bag__item-info {
+      max-width: 49%; }
+    .buy-bag__item-quantity {
+      font-size: 14px; }
+  .pay-block {
+    padding: 30px 30px 60px; }
+    .pay-block__buy-btn {
+      font-size: 26px; } }
+
+/*# sourceMappingURL=buy-bag.css.map */

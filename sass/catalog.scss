@@ -1,0 +1,334 @@
+@import 'sass/header-menu.scss';
+@import 'sass/footer.scss'; 
+@import 'sass/public-style.scss';
+
+.menu {
+    padding: 30px 25px;
+}
+
+.header {
+    &__inner-right {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+///////CATALOG//////
+////////////////////
+
+
+
+
+
+.catalog {
+    &__wrapper {
+        position: relative;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    &__block {
+        position: relative;
+        display: flex;
+        padding: 19px 20px 21px 20px;
+        &::after {
+            content: url('../img/caret.svg');
+            height: 87%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            background-color: #fff;
+            box-shadow: 2px;
+            -webkit-box-shadow: -14px 1px 30px 0px rgba(255,255,255,1);
+            -moz-box-shadow: -14px 1px 30px 0px rgba(255,255,255,1);
+            box-shadow: -35px 4px 10px 4px rgba(255,255,255,1);
+        }
+    }
+}
+
+
+
+
+.catalog__accept {
+    display: none;
+}
+
+.show-catalog {
+    flex-direction: column;
+    height: auto;
+    &::after {
+        content: none;
+
+    }
+    .category__name {
+        display: block;
+        margin-bottom: 5px;
+        & span {
+            display: none;
+        }
+    }
+    .category__elem {
+        transition: .8s ease;
+        height: 0;
+        margin-bottom: 0;
+        opacity: 0;
+        &--visible {
+            height: 100%;
+            margin-bottom: 10px;
+            opacity: 1;
+        }
+        & span {
+            display: none;
+        }
+    }
+    .catalog__accept {
+        display: block;
+        
+    }
+}
+
+.show-catalog {
+    .category {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: auto;
+        
+        width: 89%;
+        padding: 15px 20px 13px 20px;
+        border-bottom: 1px solid #e5e5e5;
+        &--select {
+            background-color: #f7f7f7;
+            .category__name {
+                display: block;
+            }
+        }
+
+        &::after {
+            content: url('../img/caret.svg');
+            height: 23px;
+        }
+    }
+}
+
+.show-catalog.category {
+    display: none;
+}
+.category--opened {
+    height: 320px;
+    opacity: 1;
+    &::after {
+        transform: rotateZ(180deg);
+    }
+    .category__name {
+        margin-bottom: 20px;
+    }
+    .category__elem {
+        display: block;
+        margin-bottom: 10px;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+
+
+.hidden-catalog {
+    .catalog__accept {
+        background-color: #f7f7f7;
+        height: 40px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        font-family: 'Futura PT';
+        box-shadow: 0px 1px 5px 0px #d5d5d5;
+        border: none;
+        margin-left: auto;
+        margin-right: 34px;
+        cursor: pointer;
+        position: relative;
+        bottom: 10px;
+        right: 0;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+///////CATEGORY//////
+////////////////////
+
+
+
+
+
+.category {
+    padding-right: 3px;
+    &__name {
+        font-family: "Futura PT";
+        font-size: 14px;
+        font-weight: 700;   
+    }
+    &__elem {
+        font-family: 'Futura PT';
+        font-size: 14px;
+        font-weight: 400;
+        color: #f14a58;
+        transition: all .6s ease;
+        height: 0;
+        margin-bottom: 0;
+        opacity: 0;
+        &--visible {
+            height: 100%;
+            opacity: 1;
+        }
+    }
+    &--select {
+
+        .category__name {
+            display: none;
+        }
+    }
+
+}
+
+.separator {
+    font-family: 'Futura PT';
+    color: black;
+}
+
+
+
+///////OFFERS//////
+////////////////////
+
+
+
+
+.offers {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 20px 100px 20px;
+    }
+    &__more {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        max-width: 220px;
+        width: 100%;
+        padding: 20px 0 22px 0;
+        margin: 65px auto 0;
+        font-family: 'Futura PT';
+        font-size: 20px;
+        border: 1px solid #e5e5e5;
+
+    }
+}
+
+.card {
+    order: 2;
+    text-align: center;
+    margin-bottom: 55px;
+    &:first-child {
+        order: 1;
+        margin-top: 0;
+    }
+    &:nth-child(2) {
+        order: 1;
+        margin-top: 0;
+    }
+    &__image-block img{
+        height: 223px;
+        margin-bottom: 35px;
+    }
+    &__title {
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+    &__subtitle {
+        font-size: 12px;
+    }
+}
+
+.advertisement {
+    order: 1;
+    max-width: 292px;
+    margin: 0 auto;
+    padding: 15px 0 86px 0;
+    text-align: center;
+    &__title { 
+        max-width: 267px;
+        margin: 0 auto 20px;
+        font-size: 20px;
+        font-family: 'Futura PT';
+        line-height: 30px;
+        letter-spacing: 0.72px;
+        & span {
+            color: #f14a58;
+        }
+    }
+    &__subtitle {
+        font-family: 'Times';
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.72px;
+    }
+}
+
+.mobile-disable {
+    display: none;
+}
+
+.advertising {
+    &__block {
+        border-top: 1px solid #e5e5e5;
+    }
+    &__item {
+    }
+    &__text {
+        max-width: 138px;
+        text-align: center;
+        padding: 30px 37px 0 0;
+        margin-left: auto;
+
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-family: 'Fututra PT';
+        font-size: 26px;
+        color: #fff;
+    }
+    &__subtitle {
+        font-family: 'Times';
+        font-size: 16px;
+        color: #fff;
+    }
+}
+
+.adidas {
+    background: url('../img/advertising1.png') no-repeat center center / contain #324063;
+    height: 224px;
+}
+
+.repair-patch {
+    display: none;
+}
+  
+
+
+
+@import 'sass/main-media-query.scss';
+@import 'sass/catalog-media-query.scss'

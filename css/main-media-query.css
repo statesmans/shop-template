@@ -1,0 +1,336 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px; }
+  .header__menu {
+    display: block;
+    padding: 31px 40px 23px 40px; }
+  .header .select-lang {
+    display: block;
+    border-right: none;
+    padding: 0px 17px 11px 20px; }
+  .header__inner-main {
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 11px; }
+  .header__inner-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%; }
+  .header__inner-right {
+    display: flex; }
+  .header__sign {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 35px; }
+  .header__purchases {
+    display: flex;
+    align-items: center;
+    flex-basis: 0;
+    font-size: 12px;
+    font-weight: 400; }
+    .header__purchases::before {
+      content: '';
+      background: url("../img/ico_bag.png") no-repeat center center/contain;
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-right: 16px; }
+  .header__sign {
+    display: block; }
+  .header__logo-bg {
+    background: url("../img/Template.png") no-repeat center left/contain;
+    display: block;
+    width: 129px;
+    height: 30px; }
+  .header__menu-button {
+    display: none; }
+  .header__nav-search {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    border-bottom: none; }
+    .header__nav-search input {
+      display: none; }
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    background-color: transparent; }
+    .nav__list {
+      display: flex;
+      margin-bottom: 0;
+      padding: 0; }
+    .nav__list-item {
+      font-size: 14px;
+      padding-bottom: 0;
+      margin-right: 24px; }
+    .nav__inner-mobile {
+      display: none; }
+    .nav--closed {
+      visibility: visible;
+      transform: none; }
+  .single-item div {
+    height: 850px !important; }
+  .banners__block {
+    display: flex; }
+  .banners__item.shoes {
+    flex-grow: 3;
+    padding-right: 40px; }
+  .banners__item.bag {
+    display: block;
+    flex-grow: 2;
+    border-left: 1px solid #e5e5e5;
+    background: url("../img/bag-bg.png") no-repeat center center/contain; }
+    .banners__item.bag .banners__about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 64px 0px 0 0;
+      align-items: center;
+      margin: 0 auto; }
+    .banners__item.bag .banners__title {
+      color: #f14a58; }
+  .arrivals__block {
+    padding: 55px 40px 80px; }
+  .arrivals__card img {
+    width: 204px; }
+  .arrivals__card__title {
+    font-size: 14px; }
+  .arrivals__card__subtitle {
+    font-size: 14px; }
+  .card--disable {
+    display: block; }
+  .card:last-child {
+    display: none; }
+  .about-us__title {
+    font-size: 50px; }
+  .about-us__description {
+    max-width: 472px; }
+  .about-us__history {
+    max-width: 477px;
+    padding: 0 10px 32px; }
+  .about-us__guarantee-title {
+    max-width: 386px;
+    margin: 0 auto 22px; }
+    .about-us__guarantee-title br {
+      display: none; }
+  .about-us__description-guarantee {
+    max-width: 459px;
+    margin: 0 auto 58px; }
+  .about-us__text {
+    display: block;
+    max-width: 430px;
+    margin: 55px auto 39px;
+    font-family: 'HelveticaNeue';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left; }
+  .about-us__more {
+    display: none; }
+  .footer__contact-main {
+    flex-direction: column; }
+  .footer__main {
+    display: flex;
+    padding: 54px 40px 0; }
+  .footer__links-block {
+    flex-grow: 4;
+    border-bottom: none;
+    padding: 0 56px 45px 0; }
+  .footer__links-title {
+    font-size: 16px; }
+  .footer__links-link {
+    font-size: 14px; }
+  .footer__contact {
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 0 0 0 51px; }
+  .footer__contact-social {
+    display: block;
+    padding: 41px 22px 0; }
+    .footer__contact-social a {
+      margin-right: 20px; }
+  .footer__legal {
+    order: 1;
+    border-top: none;
+    padding: 22px 40px 22px 20px; }
+  .footer__legal-list a {
+    font-size: 12px; }
+  .footer__legal-social {
+    display: none; }
+  .footer__terms {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border-top: 1px solid #e5e5e5; }
+  .footer__license {
+    align-items: center;
+    padding: 22px 40px; }
+  .footer__license p {
+    font-size: 12px; }
+  .footer__license-share {
+    font-size: 18px;
+    margin-left: 60px; }
+  .questions {
+    padding: 0 42px 20px 22px;
+    border-right: none; }
+    .questions__title {
+      font-size: 16px; }
+    .questions__link {
+      font-size: 14px; }
+  .number__title {
+    font-size: 16px; }
+  .number__phone {
+    font-size: 14px; } }
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px; }
+  .header__inner-main {
+    margin-bottom: 23px; }
+  .header .select-lang {
+    padding: 0 36px 11px 20px; }
+  .header__menu {
+    padding: 31px 50px 23px 50px; }
+  .header__nav-search {
+    border-bottom: 2px solid #e5e5e5; }
+    .header__nav-search input {
+      display: block; }
+  .nav__list-item {
+    margin-right: 41px;
+    font-size: 14px; }
+  .banners .shoes {
+    flex-grow: 6; }
+  .banners .bag {
+    display: none; }
+  .banners .hats {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 40px;
+    background: #f7f7f7; }
+    .banners .hats .banners__about {
+      max-width: 136px;
+      padding: 35px 80px 0 0; }
+  .arrivals__title {
+    font-size: 50px; }
+  .card:last-child {
+    display: block; }
+  .about-us__title {
+    font-size: 50px; }
+  .about-us__description {
+    max-width: 522px; }
+  .about-us__description-guarantee {
+    max-width: 546px; }
+  .about-us__text {
+    max-width: 528px; }
+  .footer__contact-main {
+    flex-direction: row; }
+  .footer__main {
+    padding: 0 50px 0; }
+  .footer__contact {
+    padding: 54px 0 0 51px; }
+  .footer__contact-main {
+    display: flex; }
+  .footer__contact-delivery {
+    display: block;
+    padding: 36px 0 0 22px;
+    max-width: 317px;
+    font-family: 'Times';
+    font-size: 16px;
+    line-height: 30px;
+    color: #757575;
+    text-align: left; }
+  .footer__contact-social {
+    padding: 22px 22px 0; }
+  .footer__links-block {
+    padding: 54px 56px 75px 0;
+    border-right: 2px solid #e5e5e5; }
+  .footer__terms {
+    border-bottom: 1px solid #e5e5e5; }
+  .footer__legal {
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding: 22px 50px 22px 20px;
+    border-bottom: none; }
+  .footer__license {
+    flex-grow: 2;
+    padding: 22px 50px; }
+  .questions__link {
+    flex-wrap: wrap;
+    max-width: 100px; }
+    .questions__link span {
+      padding: 0 0 0 22px; }
+  .number {
+    padding: 0 23px 42px 22px; } }
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px; }
+  .header__menu {
+    padding: 31px 60px 23px 60px; }
+  .header__inner-left {
+    width: 28%; }
+  .nav__list-item {
+    margin-right: 65px;
+    font-size: 15px; }
+  .single-item div {
+    height: 850px !important; }
+  .banners__about {
+    max-width: 122px;
+    padding: 65px 86px 0 0; }
+  .banners__item {
+    height: 384px; }
+    .banners__item.shoes {
+      flex-grow: 5; }
+    .banners__item.hats {
+      flex-grow: 2; }
+      .banners__item.hats img {
+        width: 53%; }
+  .banners__title {
+    font-size: 30px; }
+  .banners__subtitle {
+    font-size: 16px; }
+  .banners .hats .banners__about {
+    max-width: 165px;
+    padding: 66px 108px 0 0; }
+  .arrivals__title {
+    font-size: 60px; }
+  .arrivals-more {
+    max-width: 340px;
+    font-size: 26px; }
+  .card img {
+    width: 240px; }
+  .card__title {
+    font-size: 14px; }
+  .card__price {
+    font-size: 14px; }
+  .about-us__title {
+    font-size: 60px; }
+  .about-us__description {
+    max-width: 683px; }
+  .about-us__history {
+    max-width: 559px; }
+  .about-us__guarantee-title {
+    max-width: none; }
+  .about-us__description-guarantee {
+    max-width: none; }
+  .about-us__text {
+    max-width: 643px; }
+  .footer__main {
+    padding: 0 60px 0; }
+  .footer__links-block {
+    justify-content: flex-start;
+    flex-grow: 0;
+    width: 50%; }
+  .footer__links-left {
+    width: 48%; }
+  .footer__contacts {
+    flex-grow: 0;
+    width: 50%; }
+  .questions__link {
+    max-width: none; } }
+
+/*# sourceMappingURL=main-media-query.css.map */

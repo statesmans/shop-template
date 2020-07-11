@@ -1,0 +1,242 @@
+ @import 'sass/public-style.scss';
+
+ body {
+     position: relative;
+ }
+
+.modal-buy {
+    display: none;
+    &--active {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+}
+
+ .buy-bag {
+    position: absolute;
+    max-width: 335px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    &__item {
+        display: flex;
+        font-family: 'Helveticaneue';
+    }
+    &__title-block {
+        padding: 18px 15px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    &__title {
+        font-family: 'Futura PT';
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__close-btn {
+        cursor: pointer;
+        &::before {
+            content: '';
+            display: block;
+            position: relative;
+            top: 6px;
+            width: 15px;
+            height: 3px;
+            background-color: #f14a58;
+            transform: rotateZ(45deg);
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: 3px;
+            width: 15px;
+            height: 3px;
+            background-color: #f14a58;
+            transform: rotateZ(-45deg);
+        }
+    }
+
+
+	// .buy-bag__wraper
+
+	&__wraper {
+
+        padding: 15px 15px;
+	}
+
+	// .buy-bag__item
+
+	&__item {
+        margin-bottom: 28px;
+        font-size: 12px;
+        &--delete {
+            .buy-bag {
+                &__image-block img {
+                    opacity: .6;
+                }
+                &__item-state {
+                color: #f14a58;
+                }
+                &__item-price {
+                    opacity: .6;
+                }
+                &__item-info {
+                    opacity: .6;
+                }
+                &__item-change {
+                    display: none;
+                }
+            }
+        }
+	}
+
+	// .buy-bag__image-block
+
+	&__image-block {
+        position: relative;
+        margin-right: 20px;
+        & img {
+            height: 205px;
+        }
+	}
+
+	// .buy-bag__item-state
+
+	&__item-state {
+        font-family: 'Futura PT';
+        position: absolute;
+        left: 15px;
+        top: 15px;
+	}
+
+	// .buy-bag__item-price
+
+	&__item-price {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    &__item-status {
+        margin-left: 7px;
+        font-family: 'Times';
+        font-size: 14px;
+        color: #757575;
+    }
+
+	// .buy-bag__item-info
+
+	&__item-info {
+        max-width: 105px;
+        margin-top: 15px;
+	}
+
+	// .buy-bag__item-title
+
+	&__item-title {
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        margin-bottom: 13px;
+	}
+
+	// .buy-bag__item-color
+
+	&__item-color {
+        margin-bottom: 10px;
+        font-size: 10px;
+	}
+
+	// .buy-bag__item-size
+
+	&__item-size {
+        margin-bottom: 10px;
+        font-size: 10px;
+	}
+
+	// .buy-bag__item-quantity
+
+	&__item-quantity {
+        margin-bottom: 29px;
+        font-size: 10px;
+	}
+
+	// .buy-bag__item-change
+
+	&__item-change {
+        font-family: 'Futura PT';
+        color: #f14a58;
+        &:active {
+            color: #000;
+        }
+    }
+    &__attention-deliv {
+        padding: 13px 24px;
+        font-family: 'Futura PT';
+        font-size: 10px;
+        text-align: center;
+        background-color: #f7f7f7;
+        border-top: 1px solid #e5e5e5;
+    }
+ }
+
+ .pay-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 35px;
+    // .pay-block__remove-save
+
+    &__remove-save {
+        font-family: 'Helveticaneue';
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    // .pay-block__save
+
+    &__save {
+        margin-bottom: 10px;
+    }
+
+    // .pay-block__remove
+
+    &__remove {
+    }
+
+    // .pay-block__buy-btn
+
+    &__buy-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        padding: 17px 0;
+        font-family: 'Futura PT';
+        font-size: 20px;
+        border: 1px solid #e5e5e5;
+    }
+
+    // .pay-block__cost
+
+    &__cost {
+        text-align: end;
+    }
+}
+.total-text {
+    font-family: "Helvetica Neue";
+    font-size: 10px;
+}
+.total-cost {
+    font-family: 'Futura PT';
+    font-size: 14px;
+}
+
+@import 'sass/buy-bag-media.scss';

@@ -1,0 +1,510 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .header {
+        &__menu {
+            display: block;
+            padding: 31px 40px 23px 40px;
+        }
+        .select-lang {
+            display: block;
+            border-right: none;
+            padding: 0px 17px 11px 20px;
+        }
+        &__inner-main {
+            justify-content: space-between;
+            padding: 0;
+            margin-bottom: 11px;
+        }
+        &__inner-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 38%;
+        }
+        &__inner-right {
+            display: flex;
+        }
+        &__sign {
+            font-size: 12px;
+            font-weight: 400;
+            margin-right: 35px;
+        }
+        &__purchases {
+            display: flex;
+            align-items: center;
+            flex-basis: 0;
+            font-size: 12px;
+            font-weight: 400;
+            &::before {
+                content: '';
+                background: url('../img/ico_bag.png') no-repeat center center / contain;
+                display: block;
+                width: 12px;
+                height: 12px;
+                margin-right: 16px;
+            }
+        }
+        &__sign {
+            display: block;
+        }
+        &__logo-bg {
+            background: url('../img/Template.png') no-repeat center left / contain;
+            display: block;
+            width: 129px;
+            height: 30px;
+        }
+        &__menu-button {
+            display: none;
+        }
+        &__nav-search {
+            width: auto;
+            margin-left: 0;
+            margin-bottom: 0;
+            border-bottom: none;
+            & input {
+                display: none;
+            }
+        }
+    }
+    .nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 7px;
+        background-color: transparent;
+        &__list {
+            display: flex;
+            margin-bottom: 0;
+            padding: 0; 
+        }
+        &__list-item {
+            font-size: 14px;
+            padding-bottom: 0;
+            margin-right: 24px;
+        }
+        &__inner-mobile {
+            display: none;
+        }
+        &--closed {
+            visibility: visible;
+            transform: none;
+        }
+    }
+    .single-item div {
+        height: 850px !important;
+    }
+    .banners {
+        &__block {
+            display: flex;
+        }
+        &__item.shoes {
+            flex-grow: 3;
+            padding-right: 40px;
+        }
+        &__item.bag {
+            display: block;
+            flex-grow: 2;
+            border-left: 1px solid #e5e5e5;
+            background: url('../img/bag-bg.png') no-repeat center center / contain;
+            .banners__about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                padding: 64px 0px 0 0;
+                align-items: center;
+                margin: 0 auto;
+            }
+            .banners__title {
+                color: #f14a58;
+            }
+        }
+    }
+    .arrivals {
+        &__block{
+            padding: 55px 40px 80px;
+        }
+        &__card {
+            & img {
+                width: 204px;
+            }
+            &__title {
+                font-size: 14px;
+            }
+            &__subtitle {
+                font-size: 14px;
+            }
+        }
+    }
+    .card {
+        &--disable {
+            display: block;
+        }
+        &:last-child {
+            display: none;
+        }
+    }
+
+    .about-us {
+        &__title {
+            font-size: 50px;
+        }
+        &__description {
+            max-width: 472px;
+        }
+        &__history {
+            max-width: 477px;
+            padding: 0 10px 32px;
+        }
+        &__guarantee-title {
+            max-width: 386px;
+            margin: 0 auto 22px;
+            & br {
+                display: none;
+            }
+        }
+        &__description-guarantee {
+            max-width: 459px;
+            margin: 0 auto 58px;
+        }
+        &__text {
+            display: block;
+            max-width: 430px;
+            margin: 55px auto 39px;
+            font-family: 'HelveticaNeue';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+        }
+        &__more {
+            display: none;
+        }
+    }
+    .footer {
+        &__contact-main {
+            flex-direction: column;
+        }
+        &__main {
+            display: flex;
+            padding: 54px 40px 0;
+        }
+        &__links-block {
+            flex-grow: 4;
+            border-bottom: none;
+            padding: 0 56px 45px 0;
+        }
+        &__links-title {
+            font-size: 16px;
+        }
+        &__links-link {
+            font-size: 14px;
+        }
+        &__contact {
+            flex-grow: 1;
+            flex-direction: column;
+            padding: 0 0 0 51px;
+        }
+
+        &__contact-social {
+            display: block;
+            padding: 41px 22px 0;
+            & a {
+                margin-right: 20px;
+            }
+        }
+        &__legal {
+            order: 1;
+            border-top: none;
+            padding: 22px 40px 22px 20px;
+        }
+        &__legal-list a{
+            font-size: 12px;
+        }
+        &__legal-social {
+            display: none;
+        }
+        &__terms {
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            border-top: 1px solid #e5e5e5;
+        }
+        &__license {
+            align-items: center;
+            padding: 22px 40px;
+        }
+        &__license p {
+            font-size: 12px;
+        }
+        &__license-share {
+            font-size: 18px;
+            margin-left: 60px;
+        }
+    }
+    .questions {
+        padding: 0 42px 20px 22px;
+        border-right: none;
+        &__title {
+            font-size: 16px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .number {
+        &__title {
+            font-size: 16px;
+        }
+        &__phone {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .header {
+        &__inner-main {
+            margin-bottom: 23px;
+        }
+        & .select-lang {
+            padding: 0 36px 11px 20px;
+        }
+        &__menu {
+            padding: 31px 50px 23px 50px;
+        }
+        &__nav-search {
+            border-bottom: 2px solid #e5e5e5;
+            input {
+                display: block;
+            }
+        }
+    }
+    .nav {
+        &__list-item {
+            margin-right: 41px;
+            font-size: 14px;
+        }
+    }
+    .banners {
+        & .shoes {
+            flex-grow: 6;
+        }
+        & .bag {
+            display: none; 
+        }
+        & .hats {
+            display: flex;
+            flex-grow: 1;
+            padding-left: 40px;
+            background: #f7f7f7;
+            .banners__about {
+                max-width: 136px;
+                padding: 35px 80px 0 0;
+            }
+        }
+    }
+    .arrivals {
+        &__title {
+            font-size: 50px;
+        }
+    }
+    .card {
+        &:last-child {
+            display: block;
+        }
+    }
+    .about-us {
+        &__title {
+            font-size: 50px;
+        }
+        &__description {
+            max-width: 522px;
+        }
+        &__description-guarantee {
+            max-width: 546px;
+        }
+        &__text {
+            max-width: 528px;
+        }
+    }
+    .footer {
+        &__contact-main {
+            flex-direction: row;
+        }
+        &__main {
+            padding: 0 50px 0;
+        }
+        &__contact {
+            padding: 54px 0 0 51px;
+        }
+        &__contact-main {
+            display: flex;
+        }
+        &__contact-delivery {
+            display: block;
+            padding: 36px 0 0 22px;
+            max-width: 317px;
+            font-family: 'Times';
+            font-size: 16px;
+            line-height: 30px;
+            color: #757575;
+            text-align: left;
+        }
+        &__contact-social {
+            padding: 22px 22px 0;
+        }
+        &__links-block {
+            padding: 54px 56px 75px 0;
+            border-right: 2px solid #e5e5e5;
+        }
+        &__terms {
+            border-bottom: 1px solid #e5e5e5;
+        }
+        &__legal {
+            flex-grow: 1;
+            justify-content: flex-end;
+            padding: 22px 50px 22px 20px;
+            border-bottom: none;
+        }
+        &__license {
+            flex-grow: 2;
+            padding: 22px 50px;
+        }
+    }
+    .questions {
+        &__link {
+            flex-wrap: wrap;
+            max-width: 100px;
+            & span {
+                padding: 0 0 0 22px;
+            }
+        }
+    }
+    .number {
+        padding: 0 23px 42px 22px;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1300px;
+    }
+    .header {
+        &__menu {
+            padding: 31px 60px 23px 60px;
+        }
+        &__inner-left {
+            width: 28%;
+        }
+    }
+    .nav {
+        &__list-item {
+            margin-right: 65px;
+            font-size: 15px;
+        }
+    }
+    .single-item div {
+        height: 850px !important;
+    }
+    .banners {
+        &__about {
+            max-width: 122px;
+            padding: 65px 86px 0 0;
+        }
+        &__item {
+            height: 384px;
+            &.shoes {
+                flex-grow: 5;
+            }
+            &.hats {
+                flex-grow: 2;
+                & img {
+                    width: 53%;
+                }
+            }
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        .hats .banners__about {
+            max-width: 165px;
+            padding: 66px 108px 0 0;
+        }
+    }
+    .arrivals {
+        &__title {
+            font-size: 60px;
+        }
+    }
+    .arrivals-more {
+        max-width: 340px;
+        font-size: 26px;
+    }
+    .card {
+        & img {
+            width: 240px;
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__price {
+            font-size: 14px;
+        }
+    }
+    .about-us {
+        &__title {
+            font-size: 60px;
+        }
+        &__description {
+            max-width: 683px;
+        }
+        &__history {
+            max-width: 559px;
+        }
+        &__guarantee-title {
+            max-width: none;
+        }
+        &__description-guarantee {
+            max-width: none;
+        }
+        &__text {
+            max-width: 643px;
+        }
+    }
+    .footer {
+        &__main {
+            padding: 0 60px 0;
+        }
+        &__links-block {
+            justify-content: flex-start;
+            flex-grow: 0;
+            width: 50%;
+        }
+        &__links-left {
+            width: 48%;
+        }
+        &__contacts {
+            flex-grow: 0;
+            width: 50%;
+        }
+    }
+    .questions {
+        &__link {
+            max-width: none;
+        }
+    }
+
+}
+
+
