@@ -959,7 +959,7 @@ a {
   .catalog__block {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    padding: 0 50px; }
+    padding: 0; }
     .catalog__block::after {
       content: none; }
   .category {
@@ -974,8 +974,10 @@ a {
     .category__elem {
       display: block;
       font-size: 16px; }
-    .category--select .category__name {
-      display: block; }
+    .category--selected {
+      background-color: #f7f7f7; }
+      .category--selected .category__name {
+        display: block; }
     .category::after {
       content: url("../img/caret.svg");
       height: 27px; }
@@ -1085,6 +1087,8 @@ a {
     .bag .advertising__subtitle {
       font-family: 'Times';
       font-style: italic;
-      color: #757575; } }
+      color: #757575; }
+  .category__elem {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=catalog.css.map */

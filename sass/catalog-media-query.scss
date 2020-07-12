@@ -131,10 +131,10 @@
     .catalog__block {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        padding: 0 50px;
+        padding: 0;
         &::after {
             content: none;
-        }
+        } 
     }
 
     .category {
@@ -151,7 +151,8 @@
             display: block;
             font-size: 16px;
         }
-        &--select {
+        &--selected {
+            background-color: #f7f7f7;
             .category__name {
                 display: block;
             }
@@ -344,5 +345,8 @@
             font-style: italic;
             color: #757575;
         }
+    }
+    .category__elem {
+        font-size: 18px;
     }
 }
