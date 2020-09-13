@@ -1,9 +1,30 @@
+let bagBtn = document.getElementById('header__purchases');
 let catalogAcceptBtn = document.querySelector('.catalog__accept');
 let catalogShowBtn = document.getElementById('catalog__wrapper');
 let categories = Array.from(document.getElementsByClassName('category__name'))
 let catalog = document.getElementById('catalog-block');
   
 
+document.getElementById('close-btn').addEventListener('click', ()=> {
+    let allBodyEl = Array.from(document.body.children)
+
+    allBodyEl.forEach(element => {
+        element.style.opacity = "1"
+    });
+
+    document.getElementById('modal-buy').style.display = "none";
+})
+
+bagBtn.addEventListener('click', ()=> {
+    let allBodyEl = Array.from(document.body.children)
+
+    allBodyEl.forEach(element => {
+        element.style.opacity = "0.5"
+    });
+
+    document.getElementById('modal-buy').style.display = "block";
+    document.getElementById('modal-buy').style.opacity = "1";
+})
 
 catalog.addEventListener('click', () => {
     catalog.classList.add('show-catalog');
@@ -15,7 +36,6 @@ categories.forEach(currentCategory => {
         toggleCategory(currentCategory)
     })
 });
-
 
 function toggleCategory (currentCategory) {
     if(catalog.classList.contains('show-catalog')) {

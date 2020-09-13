@@ -184,7 +184,9 @@
   .number__title {
     font-size: 16px; }
   .number__phone {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .pay-block__remove-save {
+    display: block; } }
 
 @media (min-width: 1024px) {
   .container {
