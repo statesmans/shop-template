@@ -363,17 +363,6 @@ a {
     margin-bottom: 5px; }
     .show-catalog .category__name span {
       display: none; }
-  .show-catalog .category__elem {
-    transition: .8s ease;
-    height: 0;
-    margin-bottom: 0;
-    opacity: 0; }
-    .show-catalog .category__elem--visible {
-      height: 100%;
-      margin-bottom: 10px;
-      opacity: 1; }
-    .show-catalog .category__elem span {
-      display: none; }
   .show-catalog .catalog__accept {
     display: block; }
 
@@ -384,14 +373,30 @@ a {
   height: auto;
   width: 89%;
   padding: 15px 20px 13px 20px;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  /*         &::after {
+            content: url('../img/caret.svg');
+            height: 23px;
+        } */ }
   .show-catalog .category--select {
     background-color: #f7f7f7; }
     .show-catalog .category--select .category__name {
       display: block; }
-  .show-catalog .category::after {
-    content: url("../img/caret.svg");
-    height: 23px; }
+  .show-catalog .category__text-block {
+    width: 100%; }
+  .show-catalog .category__name {
+    display: flex;
+    justify-content: space-between;
+    height: 23px;
+    padding: 0 4px 0 0;
+    box-sizing: border-box;
+    cursor: pointer; }
+    .show-catalog .category__name:hover {
+      border-radius: 2px;
+      border-bottom: 2px solid #f1f0ee; }
+    .show-catalog .category__name::after {
+      content: url("../img/caret.svg");
+      height: 23px; }
 
 .show-catalog.category {
   display: none; }
@@ -432,19 +437,32 @@ a {
     font-family: "Futura PT";
     font-size: 14px;
     font-weight: 700; }
-  .category__elem {
-    font-family: 'Futura PT';
-    font-size: 14px;
-    font-weight: 400;
-    color: #f14a58;
-    transition: all .6s ease;
-    height: 0;
-    margin-bottom: 0;
-    opacity: 0; }
-    .category__elem--visible {
-      height: 100%;
-      opacity: 1; }
   .category--select .category__name {
+    display: none; }
+
+.category__elem:hover {
+  color: #000; }
+
+.category__elem {
+  height: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-weight: 400;
+  color: #d9d9d9;
+  transition: .3s ease;
+  opacity: 0; }
+  .category__elem--visible {
+    height: 100%;
+    margin-bottom: 10px;
+    opacity: 1; }
+  .category__elem--selected {
+    height: 100%;
+    margin-bottom: 10px;
+    opacity: 1;
+    color: #f14a58; }
+  .category__elem span {
     display: none; }
 
 .separator {
@@ -966,11 +984,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 19px 13px 20px; }
+    padding: 15px 19px 13px 20px;
+    /*         &::after {
+            content: url('../img/caret.svg');
+            height: 27px;
+        } */ }
     .category__name {
       display: block;
       font-family: 'Helveticaneue';
       font-size: 12px; }
+      .category__name::after {
+        content: url("../img/caret.svg");
+        height: 27px; }
     .category__elem {
       display: block;
       font-size: 16px; }
@@ -978,9 +1003,6 @@ a {
       background-color: #f7f7f7; }
       .category--selected .category__name {
         display: block; }
-    .category::after {
-      content: url("../img/caret.svg");
-      height: 27px; }
   .card {
     width: auto; }
     .card:nth-child(4) {

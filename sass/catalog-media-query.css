@@ -1,0 +1,332 @@
+@media (min-width: 768px) {
+  .header__sign {
+    min-width: 77px;
+    margin-right: 0;
+  }
+  .header__inner-right {
+    width: 40%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__purchases {
+    width: 150px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+  }
+  .header__purchase-amount {
+    margin-left: 7px;
+  }
+  .catalog__block {
+    padding: 19px 40px 21px 40px;
+  }
+  .catalog__block::after {
+    position: relative;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .hidden-catalog .catalog__accept {
+    margin-right: 100px;
+  }
+  .category__text-block {
+    letter-spacing: 1px;
+  }
+  .offers__block {
+    padding: 20px 40px 100px 40px;
+  }
+  .card {
+    margin-bottom: 100px;
+  }
+  .card:nth-child(3) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .card__image-block img {
+    height: 289px;
+  }
+  .mobile-disable {
+    display: block;
+  }
+  .adidas {
+    height: 100%;
+    width: 67%;
+  }
+  .repair-patch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    width: 33%;
+    background: url("../img/advertising2.png") no-repeat center center/contain;
+  }
+  .repair-patch::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+  }
+  .repair-patch .advertising__text {
+    padding: 0;
+    max-width: 183px;
+    margin: 0 auto 41px;
+  }
+  .repair-patch .advertising__subtitle {
+    font-style: normal;
+  }
+  .bag {
+    display: none;
+  }
+  .advertisement {
+    width: 100%;
+    max-width: none;
+    padding: 0px 0 80px 0;
+  }
+  .advertisement__title {
+    max-width: 397px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .advertisement__subtitle {
+    max-width: 579px;
+    margin: 0 auto;
+  }
+  .advertising__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 251px;
+  }
+  .advertising__text {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog__block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    padding: 0;
+  }
+  .catalog__block::after {
+    content: none;
+  }
+  .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px 19px 13px 20px;
+  }
+  .category__name {
+    display: block;
+    font-family: 'Helveticaneue';
+    font-size: 12px;
+  }
+  .category__elem {
+    display: block;
+    font-size: 16px;
+  }
+  .category--selected {
+    background-color: #f7f7f7;
+  }
+  .category--selected .category__name {
+    display: block;
+  }
+  .category::after {
+    content: url("../img/caret.svg");
+    height: 27px;
+  }
+  .card {
+    width: auto;
+  }
+  .card:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .card__image-block img {
+    height: 289px;
+  }
+  .separator {
+    display: none;
+  }
+  .offers__block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 50px 100px 50px;
+  }
+  .offers__more {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    max-width: 340px;
+    font-size: 26px;
+  }
+  .advertisement {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .advertisement__title {
+    max-width: none;
+  }
+  .advertisement__subtitle {
+    max-width: 556px;
+  }
+  .advertising__block {
+    height: 229px;
+  }
+  .repair-patch .advertising__text {
+    padding: 0;
+    max-width: 183px;
+    margin: 0 auto 21px;
+  }
+  .adidas {
+    width: 62%;
+  }
+  .bag {
+    width: 25%;
+    background: url("../img/advertising3.png") no-repeat center center/contain #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .bag .advertising__text {
+    margin: 0px auto 11px;
+    padding: 0;
+  }
+  .bag .advertising__title {
+    color: #f14a58;
+  }
+  .bag .advertising__subtitle {
+    font-family: 'Times';
+    font-style: italic;
+    color: #757575;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card {
+    width: auto;
+  }
+  .card:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .card__image-block img {
+    height: 289px;
+  }
+  .header__inner-right {
+    width: 20%;
+  }
+  .offers__block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .offers__more {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    max-width: 340px;
+    font-size: 26px;
+  }
+  .card {
+    width: auto;
+  }
+  .card:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 0;
+  }
+  .card__image-block img {
+    height: 340px;
+  }
+  .advertisement__title {
+    font-size: 26px;
+  }
+  .advertisement__subtitle {
+    max-width: none;
+    font-size: 16px;
+  }
+  .advertising__block {
+    height: 384px;
+  }
+  .advertising__text {
+    max-width: 169px;
+    padding: 67px 87px 0 0;
+  }
+  .advertising__title {
+    font-size: 30px;
+  }
+  .advertising__subtitle {
+    font-size: 14px;
+  }
+  .adidas {
+    width: 50%;
+  }
+  .repair-patch {
+    width: 25%;
+  }
+  .repair-patch .advertising__text {
+    max-width: 194px;
+  }
+  .bag {
+    width: 25%;
+    background: url("../img/advertising3.png") no-repeat center center/contain #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .bag .advertising__text {
+    margin: 0 auto 50px;
+    padding: 0;
+  }
+  .bag .advertising__title {
+    color: #f14a58;
+  }
+  .bag .advertising__subtitle {
+    font-family: 'Times';
+    font-style: italic;
+    color: #757575;
+  }
+  .category__elem {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=catalog-media-query.css.map */

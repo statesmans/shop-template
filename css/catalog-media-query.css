@@ -88,11 +88,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 19px 13px 20px; }
+    padding: 15px 19px 13px 20px;
+    /*         &::after {
+            content: url('../img/caret.svg');
+            height: 27px;
+        } */ }
     .category__name {
       display: block;
       font-family: 'Helveticaneue';
       font-size: 12px; }
+      .category__name::after {
+        content: url("../img/caret.svg");
+        height: 27px; }
     .category__elem {
       display: block;
       font-size: 16px; }
@@ -100,9 +107,6 @@
       background-color: #f7f7f7; }
       .category--selected .category__name {
         display: block; }
-    .category::after {
-      content: url("../img/caret.svg");
-      height: 27px; }
   .card {
     width: auto; }
     .card:nth-child(4) {

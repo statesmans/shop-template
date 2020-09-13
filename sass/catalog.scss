@@ -73,25 +73,16 @@
             display: none;
         }
     }
-    .category__elem {
-        transition: .8s ease;
-        height: 0;
-        margin-bottom: 0;
-        opacity: 0;
-        &--visible {
-            height: 100%;
-            margin-bottom: 10px;
-            opacity: 1;
-        }
-        & span {
-            display: none;
-        }
-    }
+
     .catalog__accept {
         display: block;
         
     }
 }
+
+
+
+
 
 .show-catalog {
     .category {
@@ -109,11 +100,30 @@
                 display: block;
             }
         }
+        &__text-block {
+            width: 100%;
+        }
+        &__name {
+            display: flex;
+            justify-content: space-between;
+            height: 23px;
+            padding: 0 4px 0 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            &:hover {
+                border-radius: 2px;
+                border-bottom: 2px solid #f1f0ee;
+            }
+            &::after {
+                content: url('../img/caret.svg');
+                height: 23px;
+            }
+        }
 
-        &::after {
+/*         &::after {
             content: url('../img/caret.svg');
             height: 23px;
-        }
+        } */
     }
 }
 
@@ -178,20 +188,6 @@
         font-size: 14px;
         font-weight: 700;   
     }
-    &__elem {
-        font-family: 'Futura PT';
-        font-size: 14px;
-        font-weight: 400;
-        color: #f14a58;
-        transition: all .6s ease;
-        height: 0;
-        margin-bottom: 0;
-        opacity: 0;
-        &--visible {
-            height: 100%;
-            opacity: 1;
-        }
-    }
     &--select {
 
         .category__name {
@@ -199,6 +195,38 @@
         }
     }
 
+}
+
+.category__elem:hover {
+    color: #000;
+}
+
+.category__elem {
+    height: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-family: 'Futura PT';
+    font-size: 14px;
+    font-weight: 400;
+    color: #d9d9d9;
+    transition: .3s ease;
+
+    opacity: 0;
+
+    &--visible {
+        height: 100%;
+        margin-bottom: 10px;
+        opacity: 1;
+    }
+    &--selected {
+        height: 100%;
+        margin-bottom: 10px;
+        opacity: 1;
+        color: #f14a58;
+    }
+    & span {
+        display: none;
+    }
 }
 
 .separator {
@@ -296,8 +324,7 @@
     &__block {
         border-top: 1px solid #e5e5e5;
     }
-    &__item {
-    }
+
     &__text {
         max-width: 138px;
         text-align: center;

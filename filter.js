@@ -1,85 +1,55 @@
-
-
-
-/*
-let selectedFashionId;
-
-const fashionSelect = document.getElementById('fashion-select');
-const fashionOptions = document.querySelectorAll('.fashion-select option');
-
-for (let option of fashionOptions) {
-    option.onclick(function(e) {
-        if (selectedFashionId === e.id) {
-            selectedFashionId = undefined;
-            setName(fashionSelect, '');
-        } else {
-            selectedFashionId = e.id;
-            setName(fashionSelect, e.innerText);
-        }
-    })
-}
-
-function setName(el, name) {
-    el.innerText = name;
-}
-
-fashionSelect.onclick(function() {
-    fashionSelect.classList.add('opened');
-})
-
-*/
-
-
-let catalogBlock = getCatalogBlock();
 let catalogAcceptBtn = document.querySelector('.catalog__accept');
 let catalogShowBtn = document.getElementById('catalog__wrapper');
-let bagBtn = document.getElementById('header__purchases');
+let categories = Array.from(document.getElementsByClassName('category__name'))
+let catalog = document.getElementById('catalog-block');
+  
 
 
-window.onresize = getCatalogBlock;
-function getCatalogBlock() {
+catalog.addEventListener('click', () => {
+    catalog.classList.add('show-catalog');
+    catalogShowBtn.classList.add('hidden-catalog');
+})
 
-  if (window.innerWidth <= 1023) {
-    return document.getElementById('catalog-block');
-  }
+categories.forEach(currentCategory => {
+    currentCategory.addEventListener('click', ()=> {
+        toggleCategory(currentCategory)
+    })
+});
 
-};
 
-if (catalogBlock) {
-    catalogBlock.onclick = function() {
-        catalogBlock.classList.add('show-catalog');
-        catalogShowBtn.classList.add('hidden-catalog');
+function toggleCategory (currentCategory) {
+    if(catalog.classList.contains('show-catalog')) {
+        let subCategories = Array.from(currentCategory.parentNode.children[1].children)
+            // activate category
+            if(currentCategory.classList.contains('category--active')) {
+                subCategories.forEach(categoryEl => {
+                    categoryEl.classList.remove('category__elem--visible')
+                })
+                currentCategory.classList.remove('category--active')        
+            } else {
+
+            subCategories.forEach(categoryEl => {
+                categoryEl.classList.add('category__elem--visible')
+            })
+            currentCategory.classList.add('category--active')
+
+            subCategories.forEach(categoryEl => {
+                categoryEl.addEventListener('click', ()=> {
+                    if(currentCategory.classList.contains('category--active') && categoryEl.classList.contains('category__elem--selected')) {
+                        categoryEl.classList.remove('category__elem--selected')
+                    } else {
+                        categoryEl.classList.add('category__elem--selected')
+                    }
+                })
+            })
+        }
     }
 }
 
-if (catalogAcceptBtn) {
-    catalogAcceptBtn.onclick = function(e) {
-        let catalogBlock = getCatalogBlock();
-        if (catalogBlock) {
-                catalogBlock.classList.remove('show-catalog');
-                catalogShowBtn.classList.remove('hidden-catalog');
-            }        
-
-    }
-}
 
 
-
-let bagModal = document.getElementById('modal-buy');
-let bagModalHide = document.getElementById('close-btn');
-let container = document.getElementsByClassName('container');
-
-if (bagBtn) {
-    bagBtn.onclick = function() {
-        bagModal.classList.add('modal-buy--active');
-    } 
-}
-
-if (bagModalHide) {
-    bagModalHide.onclick = function() {
-        bagModal.classList.remove('modal-buy--active');
-    }
-}
-
-
+catalogAcceptBtn.addEventListener('click', ()=> {
+    catalog.classList.remove('show-catalog');
+    catalogShowBtn.classList.remove('hidden-catalog');
+})
 

@@ -1,0 +1,83 @@
+.single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.single-item div {
+  height: 530px;
+  background: url("../img/promo-block.png") no-repeat center center/cover;
+  width: 100%;
+}
+
+.slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  bottom: -2%;
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid rgba(221, 221, 221, 0.4);
+}
+
+.slick-dots li {
+  position: relative;
+  top: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.4%;
+  height: 8px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li:before {
+  top: 1px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #d1d1d1;
+  position: absolute;
+  border-radius: 60%;
+}
+
+.slick-dots li.slick-active:before {
+  top: 1;
+  width: 6px;
+  height: 6px;
+  background-color: #f14a58;
+  border-radius: 90%;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=slider.css.map */

@@ -37,7 +37,7 @@
         margin-right: 100px;
     }
 
-    .category {
+    .category { 
         &__text-block {
             letter-spacing: 1px;
         }
@@ -146,6 +146,10 @@
             display: block;
             font-family: 'Helveticaneue';
             font-size: 12px;
+            &::after {
+                content: url('../img/caret.svg');
+                height: 27px;
+            }
         }
         &__elem {
             display: block;
@@ -157,10 +161,10 @@
                 display: block;
             }
         }
-        &::after {
+/*         &::after {
             content: url('../img/caret.svg');
             height: 27px;
-        }
+        } */
     }
     .card {
         
