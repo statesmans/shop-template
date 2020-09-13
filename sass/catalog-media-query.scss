@@ -137,13 +137,24 @@
         } 
     }
 
+    .show-catalog {
+        .category {
+            width: auto;
+        }
+    }
+
     .category {
-        display: flex;
+        display: flex; 
         align-items: center;
         justify-content: space-between;
         padding: 15px 19px 13px 20px;
         &__name {
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            height: 23px;
+            padding: 0 4px 0 0;
+            box-sizing: border-box;
+            cursor: pointer;
             font-family: 'Helveticaneue';
             font-size: 12px;
             &::after {
@@ -157,15 +168,23 @@
         }
         &--selected {
             background-color: #f7f7f7;
-            .category__name {
-                display: block;
+            .category__name { 
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
             }
         }
-/*         &::after {
-            content: url('../img/caret.svg');
-            height: 27px;
-        } */
+        &__text-block {
+            width: 100%;
+        }
     }
+
+    .hidden-catalog .catalog__accept {
+        bottom: 0;
+        right: 50px;
+        margin-right: 0; 
+    }
+
     .card {
         
         width: auto;

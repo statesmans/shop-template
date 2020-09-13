@@ -4,7 +4,7 @@ let catalogShowBtn = document.getElementById('catalog__wrapper');
 let categories = Array.from(document.getElementsByClassName('category__name'))
 let catalog = document.getElementById('catalog-block');
   
-
+// close bag
 document.getElementById('close-btn').addEventListener('click', ()=> {
     let allBodyEl = Array.from(document.body.children)
 
@@ -15,6 +15,7 @@ document.getElementById('close-btn').addEventListener('click', ()=> {
     document.getElementById('modal-buy').style.display = "none";
 })
 
+// open bag
 bagBtn.addEventListener('click', ()=> {
     let allBodyEl = Array.from(document.body.children)
 
@@ -26,11 +27,14 @@ bagBtn.addEventListener('click', ()=> {
     document.getElementById('modal-buy').style.opacity = "1";
 })
 
+
+// openned catalog
 catalog.addEventListener('click', () => {
     catalog.classList.add('show-catalog');
     catalogShowBtn.classList.add('hidden-catalog');
 })
 
+// opened category
 categories.forEach(currentCategory => {
     currentCategory.addEventListener('click', ()=> {
         toggleCategory(currentCategory)
@@ -38,14 +42,16 @@ categories.forEach(currentCategory => {
 });
 
 function toggleCategory (currentCategory) {
+    let subCategories = Array.from(currentCategory.parentNode.children[1].children)
+    
     if(catalog.classList.contains('show-catalog')) {
-        let subCategories = Array.from(currentCategory.parentNode.children[1].children)
             // activate category
             if(currentCategory.classList.contains('category--active')) {
                 subCategories.forEach(categoryEl => {
                     categoryEl.classList.remove('category__elem--visible')
                 })
-                currentCategory.classList.remove('category--active')        
+                currentCategory.classList.remove('category--active')
+
             } else {
 
             subCategories.forEach(categoryEl => {
@@ -64,6 +70,18 @@ function toggleCategory (currentCategory) {
             })
         }
     }
+    counter = 0
+    subCategories.forEach(categoryEl => {
+
+        if (categoryEl.classList.contains('category__elem--selected')) {
+            currentCategory.parentNode.parentNode.classList.add('category--selected')
+            counter++
+        } 
+        if (!categoryEl.classList.contains('category__elem--selected') && counter == 0) {
+            currentCategory.parentNode.parentNode.classList.remove('category--selected')
+        }
+    })
+
 }
 
 
